@@ -108,8 +108,12 @@
     transform: scale(1.2);
 }
 
-/*Featured Product1 */
-#productContainer {
+
+
+
+
+
+#productContainer, #productContainer2 {
     display: inline-flex;
     margin-top: 2%;
     position: relative;
@@ -123,7 +127,7 @@
     margin-left: 1%;
 }
 
-#featuredProduct1 {
+#featuredProduct1, #featuredProduct2 {
     display: flex;
     justify-items: center;
     margin-left: 20%;
@@ -139,7 +143,7 @@
     justify-content: center;
 }
 
-#productImg1 {
+#productImg1, #productImg2 {
     width: 50%;
     height: fit-content;
     border-radius: 80px;
@@ -147,7 +151,7 @@
     margin-top: 4%;
 }
 
-#productText1 {
+#productText1, #productText2 {
     width: 49%;
     font-size: 20px;
     padding-left: 10px;
@@ -159,7 +163,7 @@
     margin-left: 10px;
 }
 
-#productHeader1 {
+#productHeader1, #productHeader2 {
     display: inline-flex;
     font-size: 40px;
     align-content: center;
@@ -203,7 +207,6 @@ select {
     cursor: pointer;
     outline: none;
     transition: border-color 0.3s ease;
-    /* Customizing the dropdown arrow slightly */
     appearance: none;
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"24"%20height%3D"24"%20viewBox%3D"0%200%2024%2024"><path%20fill%3D"%23333"%20d%3D"M7%2010l5%205%205-5z"%2F><%2Fsvg>');
     background-repeat: no-repeat;
@@ -223,27 +226,23 @@ select:focus {
     background-color: #D4A017;
     color: white;
 
-    /* Sizing & Shape */
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
     border: none;
     border-radius: 8px;
 
-    /* Interaction */
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect makes the button slightly darker and lift up */
 .add-to-cart-btn:hover {
     background-color: #B8860B;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Active effect for when the user clicks it */
 .add-to-cart-btn:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -253,7 +252,7 @@ select:focus {
     font-size: 18px;
 }
 
-#addToCartLabel{
+#addToCartLabel, #addToCartLabel2{
     position: absolute;
     bottom: 0px;
 }
@@ -298,12 +297,6 @@ select:focus {
     font-style: italic;
     font-size: 14px;
     margin-left: 2%;
-}
-
-#product2Container{
-    display: flex;
-    position: relative;
-    background-color: red;
 }
 
 #giftSetImg {
