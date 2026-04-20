@@ -36,34 +36,43 @@
     margin-left: 2%;
 
 }
-.liLinks, .navLi{
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
-    text-wrap-mode: nowrap;
-    font-size: 20px;
-}
-
-#navigation{
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.navLi, .liLinks{
-    background-color: rgb(56, 41, 0);
-    border-radius: 5px;
-    padding: 2px;
-    margin-left: 1%;
-    margin-right: 1%;
-}
 
 #navList {
-    width: 80%;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navigation {
     display: flex;
-    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    gap: 20px;
+
     justify-content: center;
+}
+
+.navLi {
+
+    flex: 0 1 auto;
+}
+
+.liLinks {
+    display: block;
+    background-color: #a38442;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.liLinks:hover {
+    background-color: #5A7D9C;
+    transform: translateY(-2px);
 }
 
 .navLogistics {
