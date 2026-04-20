@@ -119,7 +119,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 98%;
+    margin-left: 1%;
 }
 
 #featuredProduct1 {
@@ -130,6 +131,12 @@
 
 #productInfo {
     margin-right: 0;
+}
+
+#productInfo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #productImg1 {
