@@ -1,62 +1,78 @@
-body {
-    display: flex;
-}
-
 /*nav bar */
 #navBar {
     background-color: rgb(10, 10, 10);
-    position: fixed;
-    top: 5px;
+    display: flex;
     width: 100%;
-    height: 159px;
+    position: sticky;
+    top: 0%;
+    height: fit-content;
     align-content: center;
-    border-radius: 4%;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
 }
 
 #logo{
-    position: fixed;
-    width: 300px;
+    position: sticky;
+    width: 200px;
     height: fit-content;
-    padding-left: 15px;
-    left: 0;
 }
 
-#navigation, li, a {
+#logoLink {
+    width: 85%;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+}
+
+#logoContainer {
+    position: sticky;
+    padding-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navigation, .liLinks, .navLi{
+    display: inline-block;
     text-decoration: none;
     list-style: none;
-    text-wrap: none;
     color: inherit;
+    text-wrap-mode: nowrap;
     font-size: 20px;
-
+    padding-right: 13%;
+    padding-top: 2%;
 }
 
-.navLi {
+.navLi, .liLinks{
     background-color: rgb(56, 41, 0);
-    margin: 2px;
-    border-radius: 70%;
-    padding: 1.5%;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 #navList {
-    margin: 70px;
-    margin-left: 315px;
-    margin-right: 315px;
-
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-#navLogistics {
-    display: flex;
-    position: absolute;
-    right: 60px;
-    top: 64px;
+.navLogistics {
+    display: inline-flex;
+    margin-left: auto;
+    padding-top: 2%;
+    padding-right: 4%;
 }
 
 #searchLogo{
-    width: 70px;
+    width: 60px;
     height: fit-content;
+    display: flex;
+}
+
+.logoContainers {
+    width: fit-content;
+    height: fit-content;
+    margin: 4%;
 }
 
 #accountLogo{
@@ -67,80 +83,148 @@ body {
 }
 
 #cartLogo {
-    width: 60px;
+    width: 48px;
     height: fit-content;
     padding-top: 7px;
-}
-
-#searchLogo, #accountLogo, #cartLogo {
-    padding-right: 10px;
+    transform: scale(1.2);
 }
 
 /*Featured Product1 */
 #productContainer {
-    width: 100%;
-    display: flex;
-    margin-top: 180px;
+    display: inline-flex;
+    margin-top: 2%;
     position: relative;
     background-color: rgb(56, 41, 0);
-    height: 560px;
+    height: auto;
     border-radius: 22px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#featuredProduct1 {
+    display: flex;
+    justify-items: center;
+    margin-left: 20%;
 }
 
 #productInfo {
-    display: flexbox;
-    position: absolute;
-
-    width: 500px;
-    right: 18%;
-    top: 10%;
+    margin-right: 0;
 }
 
 #productImg1 {
-    width: 600px;
+    width: 50%;
     height: fit-content;
-    position: absolute;
-    left: 20%;
-    top: 12px;
-    border-radius: 2%;
+    border-radius: 80px;
+    padding-right: 6%;
+    margin-top: 4%;
 }
 
 #productText1 {
-    width: 480px;
+    width: 49%;
     font-size: 20px;
     padding-left: 10px;
+    text-wrap-mode: wrap;
 }
 
 #price {
     font-size: 25px;
-    position: absolute;
-    right: 62px;
-    top: 59px;
+    margin-left: 10px;
 }
 
 #productHeader1 {
+    display: inline-flex;
     font-size: 40px;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    text-wrap-style: balance;
+    text-align: center;
 }
 
 #companyText1 {
     font-size: 20px;
+    display: flex;
+    text-wrap-mode: wrap;
+    width: 50%;
 }
 
-#honeyFlights{
-    position: relative;
-    left: 38px;
-    margin: 10px;
+.honey-selection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-#addToCart {
-    background-color: rgb(245, 190, 41);
-    width: 250px;
-    height: 50px;
-    border-radius: 20px;
-    position: relative;
-    margin-top: 10px;
-    left: 50px;
+select {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #444;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+    /* Customizing the dropdown arrow slightly */
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"24"%20height%3D"24"%20viewBox%3D"0%200%2024%2024"><path%20fill%3D"%23333"%20d%3D"M7%2010l5%205%205-5z"%2F><%2Fsvg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+
+select:focus {
+    border-color: #d4af37;
+}
+
+.add-to-cart-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #D4A017;
+    color: white;
+
+    /* Sizing & Shape */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+
+    /* Interaction */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect makes the button slightly darker and lift up */
+.add-to-cart-btn:hover {
+    background-color: #B8860B;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active effect for when the user clicks it */
+.add-to-cart-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon {
+    font-size: 18px;
 }
 
 #addToCartLabel{
@@ -148,15 +232,110 @@ body {
     bottom: 0px;
 }
 
+#addToCartSelection, #addToCart {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#pickUpInformation{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+
 #storeInfo {
     display: flex;
-    position: absolute;
-    font-size: 12px;
-    bottom: 30px;
-    left: 320px;
+    font-size: 14px;
+    width: 135px;
+    height: fit-content;
+    text-wrap-mode: nowrap;
+    margin-top: 23px;
+    margin-left: 14px;
+    text-decoration: none;
+    color: inherit;
+    text-wrap-mode: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#storeInfo:focus {
+    background-color: #B8860B;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 #readyTime {
-    padding-left: 70px;
+    font-style: italic;
     font-size: 14px;
+    margin-left: 2%;
+}
+
+#product2Container{
+    display: flex;
+    position: relative;
+    background-color: red;
+}
+
+#giftSetImg {
+    width: 50px;
+    height: fit-content;
+}
+
+
+@media (max-width: 800px){
+    #logo{
+        position: sticky;
+        width: 80px;
+        height: fit-content;
+    }
+
+    #navigation, .navLi, .liLinks{
+        font-size: 12px;
+    }
+
+    #searchLogo{
+        width: 35px;
+        height: fit-content;
+        display: flex;
+        padding-top: 6px;
+    }
+
+    .logoContainers {
+        width: fit-content;
+        height: fit-content;
+        margin: 4%;
+    }
+
+    #accountLogo{
+        width: 20px;
+        height: fit-content;
+        padding-top: 14px;
+
+    }
+
+    #cartLogo {
+        width: 24px;
+        height: fit-content;
+        padding-top: 11px;
+        transform: scale(1.2);
+    }
+
+    #productContainer{
+        width: fit-content;
+    }
+
+    #productText1 {
+        font-size: 12px;
+    }
+
+    #productHeader1{
+        font-size: 20px;
+    }
+
+    #price{
+        font-size: 18px;
+    }
 }

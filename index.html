@@ -11,20 +11,30 @@
     <!--Navigation Bar-->
     <div id="navBar">
         <div id="logoContainer">
-            <a href=""><img id="logo" src="Assets/Photos/BoulderValleyHoneyLogoTransparent.png" alt=""></a>
+            <a id="logoLink" href=""><img id="logo" src="Assets/Photos/BoulderValleyHoneyLogoTransparent.png" alt=""></a>
         </div>
 
         <div id="navList">
             <ul id="navigation">
-                <li class="navLi"><a href="">Shop</a></li>
-                <li class="navLi"><a href="">Education & Research</a></li>
-                <li class="navLi"><a href="">About Us & Bees</a></li>
+                <li class="navLi"><a class="liLinks" href="">Shop</a></li>
+                <li class="navLi"><a class="liLinks" href="">Education & Research</a></li>
+                <li class="navLi"><a class="liLinks" href="">About Us & Bees</a></li>
             </ul>
         </div>
-        <div id="navLogistics">
-            <a href=""><img id="searchLogo" src="Assets/Photos/SearchLogo.png" alt=""></a>
-            <a href=""><img id="accountLogo" src="Assets/Photos/PersonLogo.png" alt=""></a>
-            <a href=""><img id="cartLogo" src="Assets/Photos/CartLogo.png" alt=""></a>
+
+        <div class="navLogistics">
+            <div class="logoContainers">
+                <a href=""><img id="searchLogo" src="Assets/Photos/SearchLogo.png" alt=""></a>
+            </div>
+
+            <div class="logoContainers">
+                <a href=""><img id="accountLogo" src="Assets/Photos/PersonLogo.png" alt=""></a>
+            </div>
+
+            <div class="logoContainers">
+                <a href=""><img id="cartLogo" src="Assets/Photos/CartLogo.png" alt=""></a>
+            </div>
+
         </div>
 
     </div>
@@ -35,8 +45,7 @@
 
                 <div id="productInfo">
                     <p id="companyText1">Boulder Valley Honey</p>
-                    <h2 id="productHeader1">Honey Taster Flight</h2>
-                    <p id="price">$49.99</p>
+                    <h2 id="productHeader1">Honey Taster Flight<span id="price">$49.99</span></h2>
 
                     <p id="productText1">
                     Our honey flights showcase the diversity of forage available 
@@ -47,24 +56,45 @@
                     on of our beeswax lip balms.
                     </p>
 
-                    <label id="honeyFlights" for="honeyFlight">Choose Your Honey Flight</label><br>
-                    <select name="honeyFlight" id="honeyFlights">
-                    <option value="beekeeperChoice">Beekeeper's Choice (BVH Pick)</option>
-                    <option value="reservoirFarmsteadTable">Reservoir+Farmstead+Table Mountain</option>
-                    <option value="reservoirFarmsteadOrchard">Reservoir+Farmstead+Orchard</option>
-                    <option value="reservoirOrchardTablemountain">Reservoir+Orchard+Table Mountain</option>
-                    <option value="farmsteadOrchardTablemountain">Farmstead+Orchard+Table Mountain</option>
-                    </select>
+                    <div id="addToCartSelection">
+                        <div class="honey-selection-container">
+                            <label for="honeyFlights">Choose Your Honey Flight</label>
+                            <select name="honeyFlight" id="honeyFlights">
+                                <option value="beekeeperChoice">Beekeeper's Choice (BVH Pick)</option>
+                                <option value="reservoirFarmsteadTable">Reservoir+Farmstead+Table Mountain</option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <a id="addToCart" href=""><p id="addToCartLabel">Add to cart</p></a>
+                    <div id="addToCart">
+                        <button class="add-to-cart-btn">
+                            <span class="btn-icon">🛒</span>
+                            Add to Cart
+                        </button>
+                    </div>
 
-                    <p id="pickup">Pickup available at Boulder Valley Farmstead<br> <span id="readyTime">Usually read in 2-4 days</span></p>
+                    <div id="pickUpInformation">
+                        <p id="pickup">Pickup available at Boulder Valley Farmstead<br> <span id="readyTime">Usually ready in 2-4 days</span></p>
 
-                    <a href="" id="storeInfo">View store information</a>
+                        <a href="" id="storeInfo" >View store information</a>
+                    </div>
                 </div>
             </div>
 
         </div>
+    </div>
+
+    <div id="product2Container">
+
+        <!--
+        <div id="product2Content">
+
+            <img id="giftSetImg" src="Assets/Photos/giftset.webp" alt="">
+            <p>Text</p>
+
+        </div>
+        -->
+
     </div>
 
 </body>
