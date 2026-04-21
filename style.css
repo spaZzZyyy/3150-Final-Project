@@ -229,7 +229,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    
+
 }
 
 #productImg1 {
@@ -434,7 +434,8 @@ select:focus {
 #weAre {
     text-align: center;
     font-size: 20px;
-    width: 500px;
+    width: fit-content;
+    height: fit-content;
 }
 
 
