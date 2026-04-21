@@ -113,7 +113,7 @@
 
 
 
-#productContainer, #productContainer2 {
+#productContainer, #productContainer2, #productContainer3, #productContainer4 {
     display: inline-flex;
     margin-top: 2%;
     position: relative;
@@ -125,25 +125,47 @@
     justify-content: center;
     width: 98%;
     margin-left: 1%;
+    margin-bottom: 2%;
 }
 
-#featuredProduct1, #featuredProduct2 {
+#productContainer4{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#featuredProduct1, #featuredProduct2, #featuredProduct3 {
     display: flex;
     justify-items: center;
     margin-left: 20%;
 }
 
 #productInfo {
-    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #productInfo2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
 
-#productImg1, #productImg2 {
+#map{
+    width: 50%;
+}
+
+#productInfo3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+#productImg1 {
     width: 50%;
     height: fit-content;
     border-radius: 80px;
@@ -151,6 +173,23 @@
     margin-top: 4%;
 }
 
+#productImg2{
+    width: 50%;
+    height: fit-content;
+    border-radius: 80px;
+    margin: 20px;
+    padding-right: 6%;
+}
+
+#productImg3{
+    width: 50%;
+    height: fit-content;
+    border-radius: 80px;
+    margin: 20px;
+    margin-top: 5%;
+    margin-right: 30%;
+    padding-left: 10%;
+}
 #productText1, #productText2 {
     width: 49%;
     font-size: 20px;
@@ -163,7 +202,7 @@
     margin-left: 10px;
 }
 
-#productHeader1, #productHeader2 {
+#productHeader1 {
     display: inline-flex;
     font-size: 40px;
     align-content: center;
@@ -171,6 +210,24 @@
     width: 50%;
     text-wrap-style: balance;
     text-align: center;
+}
+
+#productHeader2 {
+    display: inline-flex;
+    font-size: 55px;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    text-wrap-style: balance;
+    text-align: center;
+}
+
+#productHeader3{
+    display: flex;
+    font-size: 40px;
+    width: 50%;
+    text-wrap-style: balance;
+    margin-right: auto;
 }
 
 #companyText1 {
@@ -252,24 +309,27 @@ select:focus {
     font-size: 18px;
 }
 
-#addToCartLabel, #addToCartLabel2{
-    position: absolute;
-    bottom: 0px;
-}
 
-#addToCartSelection, #addToCart {
+#addToCartSelection, #addToCart, #addToCart2, #addToCart3 {
     width: 50%;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
+#addToCart3 {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+#addToCart2 {
+    margin-bottom: 10%;
+}
+
 #pickUpInformation{
     display: flex;
+    flex-direction: column;
     width: fit-content;
-    justify-content: center;
-    align-content: center;
-    transform: translateX(-50px);
 }
 
 #storeInfo {
@@ -277,12 +337,11 @@ select:focus {
     font-size: 14px;
     width: 135px;
     height: fit-content;
-    text-wrap-mode: nowrap;
-    margin-top: 23px;
     margin-left: 14px;
+    margin-bottom: 10%;
     text-decoration: none;
     color: inherit;
-    text-wrap-mode: nowrap;
+    text-wrap-mode: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -302,6 +361,10 @@ select:focus {
 #giftSetImg {
     width: 50px;
     height: fit-content;
+}
+
+#weAre {
+    font-size: 20px;
 }
 
 
