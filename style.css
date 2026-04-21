@@ -489,3 +489,155 @@ select:focus {
         font-size: 18px;
     }
 }
+
+.site-footer {
+    background-color: #1A1A1A; /* Deep charcoal background */
+    color: white;
+    padding: 80px 40px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+/* Logo Styling */
+.logo-area {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.footer-logo {
+    width: 280px;
+    margin-bottom: 15px;
+    filter: invert(1); /* Makes a black logo white */
+}
+
+/* Links Styling */
+.links-area h3, .signup-area h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.links-area ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-area li {
+    margin-bottom: 12px;
+}
+
+.links-area a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.links-area a:hover {
+    opacity: 1;
+}
+
+/* Newsletter Input Styling */
+.newsletter-form {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter-form button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Info Styling */
+.footer-contact p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-contact a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Container for the form elements */
+.footer-form {
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Styling the actual Textarea */
+.input-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px 0;
+    outline: none;
+    resize: vertical; /* Allows user to pull it down but not wide */
+    min-height: 80px;  /* Starts with enough room for a short note */
+}
+
+/* Make the placeholder text slightly transparent to match the design */
+.input-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Change the border color when the user is typing */
+.input-group:focus-within, 
+.newsletter-form:focus-within {
+    border-bottom: 1px solid #F89E11; /* Honey yellow highlight on focus */
+}
+
+/* Responsive Stacking */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .newsletter-form {
+        justify-content: center;
+    }
+}
