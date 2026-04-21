@@ -129,8 +129,10 @@
 }
 
 #productContainer4{
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 #featuredProduct1, #featuredProduct2, #featuredProduct3 {
@@ -153,9 +155,74 @@
     align-items: flex-start;
 }
 
-#map{
-    width: 50%;
+#map, #mapOverlay{
+    width: 1000px;
+    height: 1000px;;
 }
+
+#mapOverlay{
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    position: absolute;
+}
+
+#mapPoints{
+    position: absolute;
+    font-size: 20px;
+    min-width: 100%;
+    transform: translate(-100px, 0px);
+    img{
+        display: flex;
+        width: 200px;
+        height: fit-content;
+        border-radius: 8px;
+    }
+
+    #point1, #point2, #point3, #point4, #point5{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        z-index: 600;
+    }
+
+    #point1{
+        top: 320px;
+        left: 300px;
+    }
+
+    #point2{
+        top: 360px;
+        left: 850px;
+    }
+
+    #point3{
+        top: 560px;
+        left: 400px;
+    }
+
+    #point4{
+        top: 780px;
+        left: 166px;
+    }
+
+    #point5 {
+        top: 810px;
+        left: 544px;
+    }
+}
+
+#header4 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+#mapText{
+    font-size: 30px;
+    width: 500px;
+    text-align: center;
+}
+
 
 #productInfo3{
     display: flex;
